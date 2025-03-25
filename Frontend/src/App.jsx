@@ -5,10 +5,12 @@ import RegisterPage from "./pages/RegisterPage";
 import GameListPage from "./pages/GameListPage";
 import BetPage from "./pages/BetPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
